@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: 'Roboto';
+}
+
+body{
+    background: url(./img/imagemDeFundo.png);
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-logo{
+    margin: 100px 100px;
+}
+
+.container-logo img{
+    width: 70vh;
+}
+
+container-login{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 100px;
+}
+
+.login{
+    margin: 20px;
+    padding: 20px;
+
+    background-color: #0d0c23;
+
+    border: 11px solid #ffffff;
+    border-radius: 18px;
+    box-shadow: 7px 7px 10px rgba(255, 254, 254, 0.25);
+}
+
+.login img{
+    width: 10vw;
+
+    margin: 20px 150px;
+}
+
+.login span{
+    display: flex;
+    margin-left: 100px;
+
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.login form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login form .nome{
+    margin: 10px;
+    display: flex;
+
+    border-bottom: 5px solid #ffffff;
+}
+
+.login form .senha{
+    margin: 10px;
+    display: flex;
+
+    border-bottom: 5px solid #ffffff;
+}
+
+.login label{
+    position: absolute;
+    transform: translateY(-100%);
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.login input{
+    margin: 5px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.i i{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.buttons{
+    display: flex;
+}
+
+.buttons button{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.buttons a{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.buttons #login{
+    cursor: pointer;
+
+    width: 150px;
+    height: 50px;
+
+    border-radius: 59px;
+    border-style: none;
+
+    background-color: #0BCD70;
+
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+
+    transition: 0.3s;
+}
+
+.buttons #login:hover{
+    box-shadow: 0px 0px 12px #ffffff;
+    text-shadow: 0px 0px 12px #ffffff;
+}
+
+.buttons #cadastro{
+    cursor: pointer;
+
+    width: 150px;
+    height: 35px;
+    padding-top: 13px;
+
+    border-radius: 59px;
+    border-style: none;
+
+    background-color: #D21568;
+
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.buttons #cadastro:hover{
+    box-shadow: 0px 0px 12px #ffffff;
+    text-shadow: 0px 0px 12px #ffffff;
+}
+    

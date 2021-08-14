@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js%22%3E"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="container-logo">
+            <div class="logo">
+                <img src="./img/cad.gif" alt="">
+            </div>
+        </div>
+
+        <div class="container-login">
+            <div class="login">
+                <img src="./img/astronauta.png" alt="">
+                <span>Seja um tripulante!</span>
+
+                <form>
+                    <div class="nome">
+                            <div class="i">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <label for="nome">Nome do Usuário</label>
+                            <input type="text" id="nome" onkeyup="validaNome()">
+                            <div id="txtNome"></div>
+                    </div>
+
+                    <div class="email">
+                        <div class="i">
+                            <i class="fas fa-email"></i>
+                        </div>
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" onkeyup="validaEmailComAtualizacao()">
+                            <div id="txtEmail"></div>
+                        </div>
+                    </div>
+
+                    <div class="senha">
+                        <div class="i">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" onkeyup="validaSenha()">
+                        <div id="txtSenha"></div>
+                    </div>
+
+                    <div class="genero">
+                        <div class="i">
+                            <i class="fas fa-circle"></i>
+                            <label for="genero">Selecione a opção que você mais se identifica<br></label>
+                            <select  id="genero">
+                                <option value="mulher">Mulher (cis ou trans)</option>
+                                <option value="homem">Homem (cis ou trans)</option>
+                                <option value="nbinario">Não binário</option>
+                                <option value="travesti">Travesti</option>
+                                <option value="ndeclarar">Prefiro não declarar</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <a type="submit" id="login" href="./index.html">Logar</a>
+                        <button type="submit" id="cadastro" onclick="enviar(event)">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="valida.js"></script>
+</body>
+</html>
