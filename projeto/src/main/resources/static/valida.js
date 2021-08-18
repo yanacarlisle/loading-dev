@@ -54,3 +54,56 @@ function validaSenhaComAtualizacao(){
         senhaOk = true
     }
 }
+
+//integração com o back-end
+
+function enviar(){
+
+    event.preventDefault()
+
+    if (nomeOk == false || emailOk == false || senhaOk == false){
+        alert("Preencha os dados corretamente, por favor")
+        return
+}
+
+    let body = {
+        name: nome.value,
+        email: email.value,
+        password: senha.value,
+        date = Date(), //2021-08-14T
+    }
+
+    fetch("/form",{
+        method: "POST",
+        headers: {"Content-Type":"application/json"},
+        body: JSON.stringify(body) 
+    }).then(response => {
+        if(response.ok){
+            alert("Você foi cadastrado com sucesso")
+            window.location.href = "http://localhost8080/"
+        }
+        else{
+            alert("Tivemos um problema com o cadastro")
+        }
+        console.log(response)
+        response.json().then(user =>{console.log(user)})
+    })
+
+}
+
+function logar(event) {
+    event.previneDefault()
+
+    if(emailOk ==false || senhaOk == false){
+        alert("Preencha os dados corretamente, por favor")
+    }
+    let body = {
+        email:email.value,
+        password: senha.value,
+    }
+    fetch("/login", {
+        method:'POST',
+        headers
+    })
+}
+
